@@ -262,14 +262,6 @@
 <body class="bg-gray-900 text-white min-h-screen" x-data="app()" 
       @keydown.meta.k.prevent="$refs.searchInput.focus()"
       @keydown.ctrl.k.prevent="$refs.searchInput.focus()">
-    <!-- div x-data="{ showPopup: localStorage.getItem('showPopupReminder') !== 'false' }" x-show="showPopup" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-        <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg max-w-md w-full">
-            <h2 class="text-lg font-bold mb-2">Important Notice</h2>
-            <p class="mb-4">Please bookmark <a href="https://nova-domains.github.io" target="_blank" class="text-purple-400 underline">nova-domains.github.io</a> in case the domain you're using stops working. This website lists all Nova domains and indicates whether each one is working or not.</p>
-            <p class="mb-4">You can disable this popup in <a href="settings.html" class="text-purple-400 underline">Settings > Appearance</a>.</p>
-            <button @click="showPopup = false" class="bg-purple-600 text-white w-full px-4 py-2 rounded hover:bg-purple-700 transition">Got it!</button>
-        </div>
-    </div -->
     <div x-show="localStorage.getItem('showParticles') !== 'false'" id="particles-js" class="fixed inset-0 pointer-events-none z-0"></div>
 
     <!-- navigation -->
